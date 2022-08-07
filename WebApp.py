@@ -10,8 +10,12 @@ from fbprophet import Prophet
 from fbprophet.plot import plot_plotly
 import yfinance as yf
 from datetime import date
+import streamlit.components.v1 as components
 
-
+st.write(
+        f'<iframe src="https://aiforecast-website.netlify.app/" width=800px></iframe>',
+        unsafe_allow_html=True,
+    )
 
 start = '2015-01-01'
 end = '2022-08-06'
